@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yayasan Talaga Kautsar Indonesia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <img src="logo 2.png" alt="Yayasan Talaga Kautsar Logo">
+                    <h2>Yayasan Talaga Kautsar</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#profil" class="nav-link">Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#berita" class="nav-link">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#struktur" class="nav-link">Struktur Organisasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#kontak" class="nav-link">Kontak</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Yayasan Talaga Kautsar Indonesia</h1>
+            <p>Iman hanya kepada satu Tuhan, Ilmu tidak mengenal sekat dan batasan, dan amal kebaikan dipersembahkan kepada semua ciptaan Tuhan.</p>
+            <div class="hero-buttons">
+                <a href="#profil" class="btn btn-primary">Profil Kami</a>
+                <a href="#kontak" class="btn btn-secondary">Hubungi Kami</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profil Section -->
+    <section id="profil" class="profil">
+        <div class="container">
+            <h2 class="section-title">Profil Yayasan</h2>
+            <div class="profil-content">
+                <div class="profil-text">
+                    <p>Yayasan Talaga Kautsar Indonesia didirikan pada tanggal <strong>12 Maret 2026 M / 22 Ramadhan 1447 H</strong> oleh <strong>Muhamad Afif</strong> dan <strong>Eneng Yani Elviyani</strong> di kampung Talaga Desa Nembol Kecamatan Mandalawangi Kabupaten Pandeglang Provinsi Banten.</p>
+                    
+                    <p>Yayasan Talaga Kautsar Indonesia didirikan termotivasi dan terinspirasi oleh realitas yang ada di tengah-tengah masyarakat dimana lembaga dan fasilitas pendidikan untuk masyarakat masih terbatas, terutama lembaga dan fasilitas pendidikan keagamaan untuk usia dini. Maka, untuk memenuhi kebutuhan pendidikan keagamaan masyarakat tersebut dicetuskan untuk mendirikan sebuah yayasan yang bergerak di bidang <strong>pendidikan, sosial dan keagamaan</strong>.</p>
+                    
+                    <div class="visi-misi">
+                        <div class="card">
+                            <h3><i class="fas fa-eye"></i> Visi</h3>
+                            <p>Membangun manusia Indonesia yang kuat iman Islamnya serta unggul ilmu pengetahuannya.</p>
+                        </div>
+                        <div class="card">
+                            <h3><i class="fas fa-bullseye"></i> Misi</h3>
+                            <p>Kokoh spritualitas, luas ilmu pengetahuan, mulia akhlak, tinggi tanggung jawab sosial, responsif dan adaptif terhadap sains dan teknologi, serta menjunjung nilai kemanusiaan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Berita Section -->
+    <section id="berita" class="berita">
+        <div class="container">
+            <h2 class="section-title">Berita Terbaru</h2>
+            <p class="berita-intro">Tambahkan berita terbaru Anda melalui formulir berikut. Berita baru akan muncul langsung di halaman ini.</p>
+            <form id="berita-form" class="berita-form">
+                <div class="form-group">
+                    <label for="news-title">Judul Berita</label>
+                    <input type="text" id="news-title" name="news-title" placeholder="Masukkan judul berita" required>
+                </div>
+                <div class="form-group">
+                    <label for="news-date">Tanggal Berita</label>
+                    <input type="date" id="news-date" name="news-date">
+                </div>
+                <div class="form-group">
+                    <label for="news-link">Link Berita</label>
+                    <input type="url" id="news-link" name="news-link" placeholder="https://contoh.com/berita" pattern="https?://.+">
+                </div>
+                <div class="form-group">
+                    <label for="news-description">Isi Berita</label>
+                    <textarea id="news-description" name="news-description" rows="5" placeholder="Tuliskan ringkasan berita atau informasi penting..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Unggah Berita</button>
+            </form>
+            <div class="berita-grid"></div>
+            <p class="berita-empty">Belum ada berita. Tambahkan berita baru menggunakan formulir di atas.</p>
+        </div>
+    </section>
+
+    <!-- Struktur Organisasi -->
+    <section id="struktur" class="struktur">
+        <div class="container">
+            <h2 class="section-title">Struktur Organisasi</h2>
+            <div class="struktur-grid">
+                <!-- Pembina -->
+                <div class="org-card">
+                    <div class="org-header">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Pembina</h3>
+                    </div>
+                    <div class="org-member">
+                        <strong>Dr. Muhamad Afif, MA</strong>
+                    </div>
+                </div>
+
+                <!-- Dewan Pengawas -->
+                <div class="org-card">
+                    <div class="org-header">
+                        <i class="fas fa-balance-scale"></i>
+                        <h3>Dewan Pengawas</h3>
+                    </div>
+                    <div class="org-members">
+                        <div class="member-role"><strong>Ketua:</strong> Andi Suryapermana, S.S</div>
+                        <div class="member-role"><strong>Anggota:</strong></div>
+                        <div>- Mas Jahroniah, S.E</div>
+                        <div>- Khaeruddin</div>
+                        <div>- Aning</div>
+                    </div>
+                </div>
+
+                <!-- Dewan Penasihat -->
+                <div class="org-card">
+                    <div class="org-header">
+                        <i class="fas fa-comments"></i>
+                        <h3>Dewan Penasihat</h3>
+                    </div>
+                    <div class="org-members">
+                        <div class="member-role"><strong>Ketua:</strong> Jumroni, S.Sos</div>
+                        <div class="member-role"><strong>Anggota:</strong></div>
+                        <div>- Suharyo, S.S</div>
+                        <div>- Dr. Nana Suryapermana, M. Pd</div>
+                        <div>- Eti Sukmawati, S.Sos</div>
+                        <div>- Abdullah</div>
+                    </div>
+                </div>
+
+                <!-- Pengurus -->
+                <div class="org-card">
+                    <div class="org-header">
+                        <i class="fas fa-users"></i>
+                        <h3>Pengurus</h3>
+                    </div>
+                    <div class="org-members">
+                        <div class="member-role"><strong>Ketua:</strong> Eneng Yani Elviyani, S.Pd.I</div>
+                        <div class="member-role"><strong>Wakil Ketua:</strong> Gugun Gunawan</div>
+                        <div class="member-role"><strong>Sekretaris:</strong> Hanafi, S. M. Hum</div>
+                        <div class="member-role"><strong>Wakil Sekretaris:</strong> Rifa Maulana Muhammad</div>
+                        <div class="member-role"><strong>Bendahara:</strong> Yeti Muliawati, S.Sos</div>
+                        <div class="member-role"><strong>Wakil Bendahara:</strong> Aulia Alif Rahma</div>
+                    </div>
+                </div>
+
+                <!-- Bidang-bidang -->
+                <div class="org-card full-width">
+                    <div class="org-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Bidang-bidang</h3>
+                    </div>
+                    <div class="bidang-grid">
+                        <div class="bidang">
+                            <h4>Pendidikan</h4>
+                            <div>Ketua: Enong Liawati, S.Pd.I</div>
+                            <div>Anggota: E. St. Aisyah, S.Pd.I Gr</div>
+                        </div>
+                        <div class="bidang">
+                            <h4>Sosial Budaya</h4>
+                            <div>Ketua: Eem Syamsiah, S.Pd.I</div>
+                            <div>Anggota: Eka Uswatul Khasanah</div>
+                        </div>
+                        <div class="bidang">
+                            <h4>Ekonomi & Pengembangan Usaha</h4>
+                            <div>Ketua: Mulyanah</div>
+                            <div>Anggota: Wahyu Purnama, Ari Ilham Syaban</div>
+                        </div>
+                        <div class="bidang">
+                            <h4>Humas & IT</h4>
+                            <div>Ketua: Aqil Shirath Risqullah Kusnadi</div>
+                            <div>Anggota: Dudung Sugriwa, M. Fadhlurohman al Azis</div>
+                        </div>
+                        <div class="bidang">
+                            <h4>Sarana & Prasarana</h4>
+                            <div>Ketua: Hermawan</div>
+                            <div>Anggota: Ayasy Almuhandis, Abdul Fatah</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="kontak">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="kontak-content">
+                <div class="kontak-info">
+                    <div class="kontak-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>0819 7381 2240</p>
+                        </div>
+                    </div>
+                    <div class="kontak-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>yayasantalagakautsar@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="kontak-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Kampung Talaga, Desa Nembol<br>Kec. Mandalawangi, Kab. Pandeglang<br>Banten, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Yayasan Talaga Kautsar Indonesia. All Rights Reserved.</p>
+            <p class="moto">"Iman hanya kepada satu Tuhan, Ilmu tidak mengenal sekat dan batasan, dan amal kebaikan dipersembahkan kepada semua ciptaan Tuhan."</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
